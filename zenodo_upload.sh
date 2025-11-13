@@ -4,7 +4,7 @@
 #SBATCH --error=zenodo_%j.err
 #SBATCH --mem=2G
 #SBATCH --cpus-per-task=1
-#SBATCH --mail-user=email@email.com
+#SBATCH --mail-user=your_email@example.com
 #SBATCH --mail-type=ALL
 
 # Upload big files to Zenodo using the NEW FILES API (supports up to 50GB)
