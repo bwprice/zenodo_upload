@@ -52,8 +52,14 @@ cd zenodo_upload
 chmod +x zenodo_upload.sh submit_zenodo_uploads.sh
 ```
 
-3. Update the conda path in `zenodo_upload.sh` if your conda installation is not at `/home/benjp/miniconda3`:
-   - Edit lines 17-26 to match your conda installation path
+3. Configure email notifications in `zenodo_upload.sh`:
+   - Edit line 7 to set your email address for job notifications:
+     ```bash
+     #SBATCH --mail-user=your_email@example.com
+     ```
+
+4. Update the conda path in `zenodo_upload.sh` if your conda installation is not at `/home/benjp/miniconda3`:
+   - Edit lines 16-26 to match your conda installation path
 
 ## Configuration
 
